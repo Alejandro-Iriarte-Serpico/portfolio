@@ -1,0 +1,269 @@
+@mixin fontType1 {
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    font-family: 'Fredericka the Great', cursive;
+}
+
+@mixin fontType2 {
+    @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+    font-family: 'Prata', serif;
+}
+
+@mixin fontType3 {
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+    font-family: 'Oswald', sans-serif;
+}
+@mixin fontType4 {
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+    font-family: 'Oswald', sans-serif;
+}
+
+@mixin fontType5 {
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    font-family: 'Satisfy', cursive;
+}
+
+
+
+    
+header{
+width: 100%;
+height: 100vh;
+background-image: url('../../images/header2.jpg');
+background-position:center;
+background-repeat: no-repeat;
+background-size:cover;
+overflow: hidden;
+
+}
+
+
+
+.titleHeader{
+margin-top: calc(80vh/2);
+display: flex;
+flex-direction: column;
+color: rgb(4, 4, 4);
+
+
+
+
+
+        h1{
+           
+            @include fontType2;
+            font-size: 20px;
+            margin: 0 auto; 
+            align-self: center;   
+            font-weight: normal;
+            margin-bottom: 5px;
+            height: 1em;
+            width: 8em;
+            border-radius: 50px;           
+            background-color: rgba(255, 255, 255, 0.535);
+            text-align: center;
+            padding-bottom: 1em;
+            padding-top: 0.1em;
+            width: 80%;
+            
+            
+        }
+
+        h2{
+
+           
+            @include fontType2;
+            font-size: 2px;
+            margin: 0 auto; 
+            align-self: center; 
+            margin-bottom: 5px;
+            background-color: rgba(0, 255, 255, 0.631);
+            border-radius: 50px;   
+            padding: 0.1em 2em;
+           
+         }
+        div{
+            display: flex;
+            flex-direction: column;
+
+
+                        h3{
+                        @include fontType4;
+                        margin: 0 auto; 
+                        align-self: center; 
+                        font-size: 2px;
+                        border-radius: 50px;           
+                        background-color: rgba(11, 143, 143, 0.878);
+                        padding: 0.3em 0.3em;
+                        cursor: pointer;
+                        animation-name: slide;
+                        animation-duration: 2s;
+                        animation-timing-function: ease-in-out;
+                        animation-delay: .3s;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                                        
+                        @keyframes slide {
+                            from {
+                        
+                                border: solid rgb(9, 9, 9) 0.5px;
+                        
+                            }
+                            to {
+                        
+                            border: solid white 0.5px;
+                            color:white;
+                            }
+                        
+                        
+                        }
+                            
+               
+               
+                             
+                        
+                        
+               
+                    }
+
+                    span{
+                        color: black;
+                        align-self: center;
+                        position: relative;
+                        top:-0.3em;
+                        cursor: pointer;
+                        animation-name: goDown;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-delay: .3s;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                        
+                        
+                        @keyframes goDown {
+                        from {
+                           margin-top: 0.1em;
+                        }
+                        to {
+                            margin-top: 0.2em;
+                        }
+                        
+                        
+                        }
+                        
+                       
+                        
+                    }
+       
+         }
+
+
+         @media (max-width: 575.98px) {
+
+            
+                margin-top: calc(90vh/2);
+                h1{
+           
+                    
+                    font-size: clamp(28px, 10.5vw ,10.5vw);
+                  
+                }
+                h2{
+    
+                   
+                  
+                    font-size: clamp(18px, 3vw ,3vw);
+                   
+                }
+                div{ h3,span{
+                        
+                        font-size: clamp(15px, 3vw ,3vw);
+                       
+                 }}
+        
+
+
+          }
+
+         
+         @media (min-width: 575.98px) and (max-width: 768px)  {
+             
+            margin-top: calc(90vh/2.5);
+           
+            h1{
+       
+                
+                font-size: clamp(44px, 8vw ,8vw);
+              
+            }
+            h2{
+    
+               
+              
+                font-size: clamp(18px, 3vw ,3vw);
+               
+            }
+            div{ h3,span{
+                    
+                    font-size: clamp(15px, 3vw ,3vw);
+             }}
+
+            }
+             @media (min-width: 769px)  {
+
+                margin-top: calc(80vh/2);
+           
+                h1{
+           
+                    
+                    font-size: clamp(61px, 6vw ,6vw);
+                  
+                }
+                h2{
+        
+                   
+                  
+                    font-size: clamp(23px, 2.5vw ,2.5vw);
+                   
+                }
+               div{ h3,span{
+                        
+                        font-size: clamp(23px, 1.8vw ,1.8vw);
+                 }
+                }
+
+
+
+             }
+     }
+         
+
+      
+
+
+
+
+
+.noDisplay{
+
+display: none;
+
+}
+
+
+
+
+
+header div h3:hover{
+
+    
+        background-color: rgba(248, 248, 248, 0.878);
+        border: solid rgba(11, 143, 143, 0.878);
+        border-width: 1px;
+        color:rgba(11, 143, 143, 0.878); ;
+        animation-iteration-count: 0;
+
+
+      
+}
+
+

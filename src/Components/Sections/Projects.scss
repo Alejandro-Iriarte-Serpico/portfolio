@@ -1,0 +1,57 @@
+@import '../Header/Navbar.scss';
+
+
+.sectionProjects{
+
+height: 100vh;
+background-color: rgba(0, 85, 255, 0.391);
+padding: 3rem 0px;
+@media only screen and (max-width: 1000px) {
+
+
+    height: auto;
+     
+    
+}
+    
+@media (max-width: 1000px) and (orientation:landscape) { 
+
+    height: auto;
+
+}
+
+
+
+}
+
+.projectsContainer{
+
+display: flex;
+justify-content: space-evenly;
+align-content: center;
+margin-top: 40px;
+flex-wrap: wrap;
+margin-top: 5%;
+
+
+
+}
+
+.projectsTitle{
+    display: flex;
+    justify-content:flex-start;
+    @include fontType2;
+    font-weight: bold;
+    font-size: clamp(2rem, 2vw , 2vw);
+    margin-left: 3%;
+    color:rgb(248, 238, 238);
+    
+    
+    @media only screen and (max-width: 600px) {
+
+        justify-content: center;    
+
+    }
+    
+    }
+

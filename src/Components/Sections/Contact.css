@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/header2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.titleHeader {
+  margin-top: calc(80vh/2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #040404;
+}
+
+.titleHeader h1 {
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: normal;
+  margin-bottom: 5px;
+  height: 1em;
+  width: 8em;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.535);
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 0.1em;
+  width: 80%;
+}
+
+.titleHeader h2 {
+  font-family: 'Prata', serif;
+  font-size: 2px;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 5px;
+  background-color: rgba(0, 255, 255, 0.631);
+  border-radius: 50px;
+  padding: 0.1em 2em;
+}
+
+.titleHeader div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.titleHeader div h3 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2px;
+  border-radius: 50px;
+  background-color: rgba(11, 143, 143, 0.878);
+  padding: 0.3em 0.3em;
+  cursor: pointer;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes slide {
+  from {
+    border: solid #090909 0.5px;
+  }
+  to {
+    border: solid white 0.5px;
+    color: white;
+  }
+}
+
+@keyframes slide {
+  from {
+    border: solid #090909 0.5px;
+  }
+  to {
+    border: solid white 0.5px;
+    color: white;
+  }
+}
+
+.titleHeader div span {
+  color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  top: -0.3em;
+  cursor: pointer;
+  -webkit-animation-name: goDown;
+          animation-name: goDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes goDown {
+  from {
+    margin-top: 0.1em;
+  }
+  to {
+    margin-top: 0.2em;
+  }
+}
+
+@keyframes goDown {
+  from {
+    margin-top: 0.1em;
+  }
+  to {
+    margin-top: 0.2em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .titleHeader {
+    margin-top: calc(90vh/2);
+  }
+  .titleHeader h1 {
+    font-size: clamp(28px, 10.5vw, 10.5vw);
+  }
+  .titleHeader h2 {
+    font-size: clamp(18px, 3vw, 3vw);
+  }
+  .titleHeader div h3, .titleHeader div span {
+    font-size: clamp(15px, 3vw, 3vw);
+  }
+}
+
+@media (min-width: 575.98px) and (max-width: 768px) {
+  .titleHeader {
+    margin-top: calc(90vh/2.5);
+  }
+  .titleHeader h1 {
+    font-size: clamp(44px, 8vw, 8vw);
+  }
+  .titleHeader h2 {
+    font-size: clamp(18px, 3vw, 3vw);
+  }
+  .titleHeader div h3, .titleHeader div span {
+    font-size: clamp(15px, 3vw, 3vw);
+  }
+}
+
+@media (min-width: 769px) {
+  .titleHeader {
+    margin-top: calc(80vh/2);
+  }
+  .titleHeader h1 {
+    font-size: clamp(61px, 6vw, 6vw);
+  }
+  .titleHeader h2 {
+    font-size: clamp(23px, 2.5vw, 2.5vw);
+  }
+  .titleHeader div h3, .titleHeader div span {
+    font-size: clamp(23px, 1.8vw, 1.8vw);
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+header div h3:hover {
+  background-color: rgba(248, 248, 248, 0.878);
+  border: solid rgba(11, 143, 143, 0.878);
+  border-width: 1px;
+  color: rgba(11, 143, 143, 0.878);
+  -webkit-animation-iteration-count: 0;
+          animation-iteration-count: 0;
+}
+
+.containerContactSection {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.919);
+  padding-top: 20px;
+}
+
+.contactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+@media (width: 1024px) and (height: 1366px) {
+  .contactSection {
+    margin-top: calc(50vh/2);
+  }
+}
+
+.contactSection .ulContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 60px;
+}
+
+.contactSection .ulContact li {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  list-style: none;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Prata', serif;
+  text-decoration: none;
+}
+
+.contactSection .ulContact li h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+.contactSection .ulContact li a {
+  text-decoration: none;
+  font-family: 'Prata', serif;
+  color: white;
+}
+
+.contactSection .ulContact li a:hover {
+  color: #6a69ba;
+  cursor: pointer;
+}
+
+.contactSection figure {
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contactSection figure span {
+  position: absolute;
+  margin: -15px -15px;
+  font-size: 50px;
+  font-weight: bolder;
+  border-radius: 100%;
+}
+
+.contactSection figure img {
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
+  border: solid rgba(124, 122, 122, 0.159);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 600px) {
+  .contactSection #whapQr {
+    display: none;
+  }
+}
+
+.messageFooter {
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.messageFooter cite {
+  font-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.ContactTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Prata', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 3%;
+  color: #e9e3e3;
+}
+
+.messageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  text-align: justify;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 767px) {
+  .containerContactSection {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .contactSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: auto;
+  }
+  .ulContact {
+    margin-bottom: 20px;
+  }
+  .ulContact li#email {
+    font-size: clamp(1.5rem, 3vw, 3vw);
+  }
+  .ulContact a {
+    font-size: clamp(1.5rem, 3vw, 3vw);
+  }
+  .messageContainer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .containerContactSection {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
