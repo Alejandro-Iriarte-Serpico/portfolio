@@ -42,12 +42,7 @@ function Navbar(props) {
     window.addEventListener( "resize", windowHandler );
        
   
-    const handleClickHome=()=>{
-
-    
-        props.about.current.scrollIntoView({ behavior: 'smooth' });
-    
-   }
+   
         
     return (
 
@@ -60,10 +55,16 @@ function Navbar(props) {
 
         <div className= "titleHeader"> 
               
-              <h1>W E L C O M E </h1> 
-              <h2> I'm Alejandro, </h2> 
-              <h2> a Software Engineer</h2> 
-             <div> <h3 onClick={handleClickHome}>About me</h3> <span  onClick={handleClickHome} className='icon-circle-down'></span></div> 
+              <h1> Alejandro Iriarte Serpico</h1> 
+              <h2> Product Manager & Software Engineer</h2> 
+            
+              <h3> English-Spanish </h3> 
+
+
+             
+
+              
+          
                 
 
                 

@@ -5,6 +5,7 @@
 border-radius: 10px;
 height: 450px;
 width:300px ;
+min-width:300px ;
 padding-left: 0px;
 padding-right: 0px;
 background-color: rgba(16, 15, 15, 0.803);
@@ -13,12 +14,13 @@ background-color: rgba(16, 15, 15, 0.803);
 box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
 color:white;
 position: relative;
-margin: 1rem 1rem;
+margin: 4rem 4rem;
 @media (max-width: 300px ){
 
   overflow: hidden;
-  
-
+    width:280px ;
+    min-width:280px ;
+    height: 400px;
 }
 
 

@@ -13,101 +13,7 @@ function NavbarMobile(props) {
     const [showNavbar, setShowNavbar] = useState(false);
     
 
-/********************************/    
 
-/*Handles the COLOR of the navbar according to position of the screen against the sections */ 
-
-/********************************/    
-
-
-   const [indexHome, setIndexHome] = useState(true);
-   const [indexAbout, setIndexAbout] = useState(false);
-   const [indexProjects, setIndexProjects] = useState(false);
-   const [indexContact, setIndexContact] = useState(false);
-
-
-/********************************/    
-
-/*Handles the COLOR of the navbar according to position of the screen against the sections */ 
-
-/********************************/    
-
-const handleColor=()=>{
-
-
-    const home = props.home.current.getBoundingClientRect();
-    const about = props.about.current.getBoundingClientRect();
-    const projects = props.projects.current.getBoundingClientRect();    
-    const contact = props.contact.current.getBoundingClientRect();
-
-
-    const homeOnScreen= home.top < home.height*0.2 &&  home.top >= ((home.height * -1)*0.8 ) ;
-    const aboutOnScreen= about.top < about.height*0.2 &&  about.top >= ((about.height * -1)*0.8 ) ;
-    const projectsOnScreen=  projects.top < projects.height*0.2 &&  projects.top >= ((projects.height * -1)*0.8 ) ;
-    const contactOnScreen=  contact.top < contact.height*0.2 &&  contact.top >= ((contact.height * -1)*0.8 ) ;
-
-         /*contact.top < 0  &&  contact.top >= (contact.height * -1 ) ; */ 
-
-    if(homeOnScreen){
-
-        setIndexHome(true);
-
-    }else{
-
-        setIndexHome(false);
-
-    }
-                   
-    
-    
-    if(aboutOnScreen){
-
-        setIndexAbout(true);
-
-    }else{
-
-        setIndexAbout(false);
-
-    }
-        
-    if(projectsOnScreen){
-
-        setIndexProjects(true);
-
-    }else{
-
-        setIndexProjects(false);
-
-    }
-        
-  
-    if(contactOnScreen){
-
-        setIndexContact(true);
-
-    }else{
-
-        setIndexContact(false);
-
-    }
-        
-
-    
- 
-    }
-
-    useEffect(()=>{
-
-        window.addEventListener('scroll',handleColor);
-
-        return () => {
-
-            window.removeEventListener('scroll',handleColor);
-           
-          };
-    
-    
-        });
 
 
 
@@ -163,25 +69,25 @@ const handleClickContact=()=>{
          
          <ul className='ulNavbarResponsive'>
 
-                <li onClick={handleClickHome} className= {indexHome ? 'index' :''} >
+                <li onClick={handleClickHome}   >
                   
                   HOME 
   
                </li>
                
-               <li onClick={handleClickAboutMe} className= {indexAbout ? 'index' :''}>
+               <li onClick={handleClickAboutMe}>
   
                   ABOUT ME
                    
                </li>
                   
-               <li onClick={handleClickProjects} className= {indexProjects ? 'index' :''} >
+               <li onClick={handleClickProjects} >
   
                    PROJECTS
                    
                </li>
               
-               <li onClick={handleClickContact} className= {indexContact ? 'index' :''}>
+               <li onClick={handleClickContact} >
   
                    CONTACT
   

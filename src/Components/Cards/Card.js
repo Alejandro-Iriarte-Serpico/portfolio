@@ -14,7 +14,7 @@ function Card(props) {
   
     }
   
-  
+   
 
 
 
@@ -23,7 +23,7 @@ function Card(props) {
     return (
 
         <>
-        {show?<Corousel showCorousel={handleCorousel} ></Corousel> : <></>}
+        {show?<Corousel corousel={props.corousel} showCorousel={handleCorousel} ></Corousel> : <></>}
        
             
        
@@ -39,8 +39,7 @@ function Card(props) {
             </a>
 
            :<a target="_blank" rel="noreferrer"  href={props.link===''?'':props.link } className={props.link===''? 'disablePointerEvents':''}> 
-              <img alt={props.alt} onClick={props.link===undefined ? handleCorousel:null}  className='imageCard' src = {props.image } />
-            </a>
+            <img alt={props.alt} onClick={props.link===undefined ? handleCorousel:null}  className='imageCard' src = {props.image } /> </a>
 
             
             }
@@ -52,7 +51,7 @@ function Card(props) {
                    
                      
 
-                      <strong> Goals achieved:</strong><br></br>
+                    
 
                         {props.children}
                 

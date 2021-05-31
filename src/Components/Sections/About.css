@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 header {
   width: 100%;
@@ -27,7 +28,7 @@ header {
 }
 
 .titleHeader h1 {
-  font-family: 'Prata', serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 20px;
   margin: 0 auto;
   -ms-flex-item-align: center;
@@ -35,18 +36,16 @@ header {
       align-self: center;
   font-weight: normal;
   margin-bottom: 5px;
-  height: 1em;
   width: 8em;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.535);
   text-align: center;
-  padding-bottom: 1em;
   padding-top: 0.1em;
   width: 80%;
 }
 
 .titleHeader h2 {
-  font-family: 'Prata', serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 2px;
   margin: 0 auto;
   -ms-flex-item-align: center;
@@ -55,107 +54,28 @@ header {
   margin-bottom: 5px;
   background-color: rgba(0, 255, 255, 0.631);
   border-radius: 50px;
-  padding: 0.1em 2em;
+  padding: 0.2em 2em;
+  text-align: center;
 }
 
-.titleHeader div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.titleHeader div h3 {
-  font-family: 'Oswald', sans-serif;
+.titleHeader h3 {
+  font-family: 'Didact Gothic', sans-serif;
   margin: 0 auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 2px;
-  border-radius: 50px;
-  background-color: rgba(11, 143, 143, 0.878);
-  padding: 0.3em 0.3em;
-  cursor: pointer;
-  -webkit-animation-name: slide;
-          animation-name: slide;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes slide {
-  from {
-    border: solid #090909 0.5px;
-  }
-  to {
-    border: solid white 0.5px;
-    color: white;
-  }
-}
-
-@keyframes slide {
-  from {
-    border: solid #090909 0.5px;
-  }
-  to {
-    border: solid white 0.5px;
-    color: white;
-  }
-}
-
-.titleHeader div span {
-  color: black;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  position: relative;
-  top: -0.3em;
-  cursor: pointer;
-  -webkit-animation-name: goDown;
-          animation-name: goDown;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes goDown {
-  from {
-    margin-top: 0.1em;
-  }
-  to {
-    margin-top: 0.2em;
-  }
-}
-
-@keyframes goDown {
-  from {
-    margin-top: 0.1em;
-  }
-  to {
-    margin-top: 0.2em;
-  }
+  margin-bottom: 5px;
+  background-color: rgba(31, 35, 248, 0.707);
+  border-radius: 10px;
+  padding: 0.1em 2em;
+  font-weight: lighter;
+  color: white;
+  padding: 0.5em 1em;
 }
 
 @media (max-width: 575.98px) {
   .titleHeader {
-    margin-top: calc(90vh/2);
+    margin-top: calc(90vh/3.5);
   }
   .titleHeader h1 {
     font-size: clamp(28px, 10.5vw, 10.5vw);
@@ -163,23 +83,20 @@ header {
   .titleHeader h2 {
     font-size: clamp(18px, 3vw, 3vw);
   }
-  .titleHeader div h3, .titleHeader div span {
-    font-size: clamp(15px, 3vw, 3vw);
+  .titleHeader h3 {
+    font-size: clamp(15px, 2vw, 2vw);
   }
 }
 
 @media (min-width: 575.98px) and (max-width: 768px) {
   .titleHeader {
-    margin-top: calc(90vh/2.5);
+    margin-top: calc(90vh/3.5);
   }
   .titleHeader h1 {
     font-size: clamp(44px, 8vw, 8vw);
   }
   .titleHeader h2 {
     font-size: clamp(18px, 3vw, 3vw);
-  }
-  .titleHeader div h3, .titleHeader div span {
-    font-size: clamp(15px, 3vw, 3vw);
   }
 }
 
@@ -188,13 +105,10 @@ header {
     margin-top: calc(80vh/2);
   }
   .titleHeader h1 {
-    font-size: clamp(61px, 6vw, 6vw);
+    font-size: clamp(30px, 5vw, 5vw);
   }
   .titleHeader h2 {
     font-size: clamp(23px, 2.5vw, 2.5vw);
-  }
-  .titleHeader div h3, .titleHeader div span {
-    font-size: clamp(23px, 1.8vw, 1.8vw);
   }
 }
 
@@ -202,18 +116,14 @@ header {
   display: none;
 }
 
-header div h3:hover {
-  background-color: rgba(248, 248, 248, 0.878);
-  border: solid rgba(11, 143, 143, 0.878);
-  border-width: 1px;
-  color: rgba(11, 143, 143, 0.878);
-  -webkit-animation-iteration-count: 0;
-          animation-iteration-count: 0;
-}
-
 .sectionAboutMe {
-  height: 100vh;
-  padding: 3rem 0px;
+  height: auto;
+  padding: 5rem 0px;
+  background-image: url("../../images/backgroundAbout (7).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -228,19 +138,12 @@ header div h3:hover {
   }
 }
 
-@media (width: 768px) and (height: 1024px) {
-  .sectionAboutMe {
-    height: 100vh;
-  }
-}
-
 .figureSkillsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -264,12 +167,12 @@ header div h3:hover {
 }
 
 .figureCaption {
-  font-family: 'Prata', serif;
-  font-weight: bold;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.6rem;
   text-align: justify;
   margin-top: 1rem;
   border-bottom: solid;
-  border-color: rgba(135, 125, 125, 0.405);
+  border-color: rgba(75, 140, 238, 0.439);
   border-width: thin;
   text-indent: 25px;
   line-height: 2;
@@ -286,14 +189,18 @@ header div h3:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: 'Prata', serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-weight: bold;
-  font-size: clamp(2rem, 2vw, 2vw);
+  font-size: clamp(3rem, 2vw, 2vw);
   margin-left: 3%;
-  color: #615b5b;
+  color: #f7f6f6;
 }
 
 .figure {
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #fbfeff;
+  font-weight: lighter;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,7 +215,7 @@ header div h3:hover {
 
 @media (max-width: 768px) {
   .figure {
-    margin: 0 auto;
+    margin: 3rem auto;
   }
 }
 
@@ -325,44 +232,56 @@ header div h3:hover {
 }
 
 .figureImageAbout {
+  /*  object-fit: cover;
+    object-position: 0px -50px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 0 auto;*/
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0px -50px;
-     object-position: 0px -50px;
-  width: 280px;
-  height: 280px;
+  -o-object-position: -8px 1px;
+     object-position: -8px 1px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto;
-}
-
-@media (max-width: 575.98px) {
-  .figureImageAbout {
-    -o-object-position: 0px -40px;
-       object-position: 0px -40px;
-    width: 245px;
-    height: 245px;
-    border-radius: 50%;
-  }
+  background-color: #6a00ff;
+  border: solid rgba(158, 163, 181, 0.83);
+  margin-bottom: 2rem;
 }
 
 .skillsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
-  margin-left: 5%;
+  width: 60%;
+  margin: 4rem;
+}
+
+.skillsContainer h1 {
+  font-size: 5rem;
+  color: #00eeff;
+  width: 100%;
+}
+
+.skillsContainer h2 {
+  border-bottom: solid #40aff8;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .skillsContainer {
-    margin: 0 auto;
+    width: 80%;
+    margin: 1rem auto;
   }
 }
 
@@ -372,38 +291,121 @@ header div h3:hover {
   }
 }
 
-.programmingContainer {
-  margin-right: 5%;
-  margin-left: 5%;
+.skillsContainer a {
+  width: 30rem;
+  height: 22rem;
+  margin-top: 4rem;
 }
 
-.programmingList {
-  list-style: none;
-  text-decoration: none;
-  margin-top: 5px;
+.skillsContainer a :hover {
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  border: solid rgba(0, 0, 0, 0.618);
+  border-width: 1px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-.managementList {
-  list-style: none;
-  text-decoration: none;
+@media only screen and (max-width: 300px) {
+  .skillsContainer a {
+    overflow: hidden;
+    width: 28rem;
+    height: 18rem;
+  }
 }
 
-.designList {
+.skillsContainer img {
+  width: 100%;
+  height: 100%;
+  border: solid white;
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hardSkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+.hardSkills h1 {
+  font-size: 5rem;
+  color: #fdfdff;
+  width: 100%;
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hardSkills h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hardSkills {
+    margin: 0 auto;
+  }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+  .hardSkills {
+    margin: 2em auto;
+  }
+}
+
+.productSkillsContainer {
+  color: white;
+}
+
+.productSkillsContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.productSkillsContainer ul li {
+  margin-top: 0.5rem;
+}
+
+.lists {
   list-style: none;
   text-decoration: none;
-  margin-top: 5px;
+  color: white;
+}
+
+.hardSkillsContainer {
+  margin: 3rem;
 }
 
 .shadow {
   margin-top: 5px;
-  height: 7px;
-  width: 120px;
+  height: 8px;
+  width: 150px;
   border-radius: 50%;
-  background-color: rgba(92, 88, 88, 0.131);
-}
-
-.manageDesignContainer {
-  padding-right: 3rem;
+  background-color: rgba(92, 88, 88, 0.186);
 }
 
 @media only screen and (max-width: 600px) {
